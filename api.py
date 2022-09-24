@@ -28,4 +28,5 @@ def get_prediction():
 ################################################################################
 
 if __name__ == "__main__":
+	! python -m spacy download en_core_web_sm
     app.run(debug=False)
