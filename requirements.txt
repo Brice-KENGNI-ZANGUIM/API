@@ -5,7 +5,7 @@ nltk
 opencv-python==4.6.0.66
 pandas==1.4.2
 Pillow==9.0.1
-scikit-learn-intelex==2021.20220215.212715
+sklearn
 spacy==3.4.1
 spacy-legacy==3.0.10
 spacy-loggers==1.0.3
