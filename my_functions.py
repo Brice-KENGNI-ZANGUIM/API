@@ -18,7 +18,13 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import TfidfVectorizer , CountVectorizer
 
 #####################################################
-nlp = spacy.load("en_core_web_sm")
+#en_core_web_md
+#en_core_web_sm
+try:
+    nlp = spacy.load("en_core_web_md")
+except: # If not present, we download
+    spacy.cli.download("en_core_web_md")
+    nlp = spacy.load("en_core_web_md")
 
 #####################################################
 class ToLowerCase(BaseEstimator ,TransformerMixin ): 
