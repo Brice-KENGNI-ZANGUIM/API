@@ -21,10 +21,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer , CountVectorizer
 #en_core_web_md
 #en_core_web_sm
 try:
-    nlp = spacy.load("en_core_web_md")
+    nlp = spacy.load("en_core_web_sm")
 except: # If not present, we download
-    spacy.cli.download("en_core_web_md")
-    nlp = spacy.load("en_core_web_md")
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 #####################################################
 class ToLowerCase(BaseEstimator ,TransformerMixin ): 
